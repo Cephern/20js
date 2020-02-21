@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 20px;
@@ -83,6 +83,18 @@ select:focus,
 input:focus,
 button:focus {
   outline: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#amount-two::-webkit-outer-spin-button,
+#amount-two::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#amount-two {
+  -moz-appearance: textfield;
 }
 
 @media (max-width: 600px) {
